@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/public/img/bannerjjk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header,form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: white;
+    background: red;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+form button:hover {
+    background: green;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+}
