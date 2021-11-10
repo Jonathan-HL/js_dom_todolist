@@ -67,7 +67,7 @@ form button:hover {
     flex: 1;
 }
 
-.trash-btn, .complete-btn {
+.trash-btn, .complete-btn, .modif-btn {
     background: black;
     color: white;
     border: none;
@@ -76,6 +76,10 @@ form button:hover {
     font-size: 1rem;
 }
 
+.modif-btn:hover{
+    background: orange;
+    color: white;
+}
 .complete-btn:hover{
     background: green;
     color: white;
@@ -89,7 +93,7 @@ form button:hover {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash, .fa-check {
+.fa-trash, .fa-check, .fa-stream {
     pointer-events: none;
 }
 
@@ -101,4 +105,37 @@ form button:hover {
 .fall {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+    color: red;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: red;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: black;
+    color: red;
 }
