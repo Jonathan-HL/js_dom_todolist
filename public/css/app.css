@@ -8,7 +8,7 @@ body{
     background-image: url(/public/img/bannerjjk.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: whitesmoke;
 }
 
 header {
@@ -27,6 +27,7 @@ form input, form button {
     font-size: 2rem;
     border: none;
     background: white;
+    outline: none;
 }
 
 form button {
@@ -63,9 +64,23 @@ form button:hover {
     transition: all 0.5s ease;
 }
 
-.todo li {
+.text {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease; 
+    border: none;
+    outline: none;
     flex: 1;
 }
+
+/* .todo li {
+    flex: 1;
+} */
 
 .trash-btn, .complete-btn, .modif-btn {
     background: black;
@@ -102,7 +117,7 @@ form button:hover {
     opacity: 0.5;
 }
 
-.fall {
+.anime {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }

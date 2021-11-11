@@ -4,10 +4,9 @@ export let deleteCheck = (e) => {
     // supprimer todo
     if (item.classList[0] === "trash-btn") {
         let todo = item.parentElement;
-        // annimation delete(fall) css
-        todo.classList.add("fall")
-        todo.addEventListener("transitionend", () => {
-           
+        // annimation delete(anime) css
+        todo.classList.add("anime")
+        todo.addEventListener("transitionend", () => { 
             todo.remove();
         })
     }

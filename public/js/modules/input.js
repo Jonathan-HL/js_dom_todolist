@@ -9,23 +9,43 @@ export let addTodo = (event) =>{
     todoDiv.classList.add("todo");
 
     // crée Li
-    let newTodo = document.createElement("li")
-    newTodo.innerText = todoInput.value;
-    newTodo.classList.add("todo-item");
-    todoDiv.appendChild(newTodo)
+    // let newTodo = document.createElement("li")
+    // // newTodo.innerText = todoInput.value;
+    // newTodo.classList.add("todo-item");
+    // todoDiv.appendChild(newTodo)
+
+    //crée input
+    let input = document.createElement("input");
+            input.classList.add("text");
+            input.type = "text";
+            input.value =  todoInput.value;
+            input.setAttribute("readonly", "readonly")
+            todoDiv.appendChild(input);
 
     // Button verifi
     let completeButton = document.createElement("button");
     completeButton.innerHTML = '<i class = "fas fa-check"></i>'
     completeButton.classList.add("complete-btn");
     todoDiv.appendChild(completeButton);
-
+  
     // Button modif
     let modifButton = document.createElement("button");
-    modifButton.innerHTML = '<i class="fas fa-stream"></i>'
+    modifButton.innerHTML = 'Edit'
     modifButton.classList.add("modif-btn");
     todoDiv.appendChild(modifButton);
-   
+
+    // Event Edit 
+        modifButton.addEventListener("click", () => {
+            if (modifButton.innerText == "Edit") {
+                input.removeAttribute("readonly")
+                input.focus();
+                modifButton.innerText = "save";
+            } else {
+                input.setAttribute("readonly", "readonly")
+                modifButton.innerText = "Edit"
+            }
+        });
+
     // Button poubelle
     let trashButton = document.createElement("button");
     trashButton.innerHTML = '<i class = "fas fa-trash"></i>'
@@ -37,6 +57,5 @@ export let addTodo = (event) =>{
     
     // Clear la valeur input
     todoInput.value = "";
-
 }
 
