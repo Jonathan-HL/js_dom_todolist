@@ -60,9 +60,10 @@ export let addTodo = (event) =>{
 
     // Efface touts
     let deleteAll = document.querySelector(".btnEfface");
-    deleteAll.addEventListener("click", () => {
-        todoDiv.remove();
         
-    })
-}
+        deleteAll.addEventListener("click", () => {
+            todoDiv.remove();
+            
+        })
+    }
 
