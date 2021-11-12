@@ -154,3 +154,27 @@ select {
     background: black;
     color: red;
 }
+
+/* Efface tout */
+.effaceTout {
+    margin: auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    
+}
+
+.btnEfface {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.btnEfface:hover {
+    color: red;
+}

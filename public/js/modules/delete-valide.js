@@ -1,7 +1,7 @@
 export let deleteCheck = (e) => {
     let item = e.target;
     
-    // supprimer todo
+    // supprimer 1 todo
     if (item.classList[0] === "trash-btn") {
         let todo = item.parentElement;
         // annimation delete(anime) css
@@ -16,3 +16,4 @@ export let deleteCheck = (e) => {
         todo.classList.toggle("completed")
     }
     }
+    

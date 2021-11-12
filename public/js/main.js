@@ -2,7 +2,6 @@
 import {addTodo} from "./modules/input.js";
 import {deleteCheck} from "./modules/delete-valide.js";
 import {filtreTodo} from "./modules/filtres.js";
-
 // les selecteurs
 let todoInput = document.querySelector(".todo-input");
 let todoButton = document.querySelector(".todo-button");

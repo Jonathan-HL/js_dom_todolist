@@ -57,5 +57,12 @@ export let addTodo = (event) =>{
     
     // Clear la valeur input
     todoInput.value = "";
+
+    // Efface touts
+    let deleteAll = document.querySelector(".btnEfface");
+    deleteAll.addEventListener("click", () => {
+        todoDiv.remove();
+        
+    })
 }
 
