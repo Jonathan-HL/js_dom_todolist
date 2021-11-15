@@ -7,6 +7,7 @@ export let addTodo = (event) =>{
     // crée Div.todo
     let todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
+    
 
     // crée Li
     // let newTodo = document.createElement("li")
@@ -21,6 +22,11 @@ export let addTodo = (event) =>{
             input.value =  todoInput.value;
             input.setAttribute("readonly", "readonly")
             todoDiv.appendChild(input);
+            let demande = todoInput.value;
+            if (!demande) {
+                alert("Rajoute une taches !");
+                return
+            }
 
     // Button verifi
     let completeButton = document.createElement("button");

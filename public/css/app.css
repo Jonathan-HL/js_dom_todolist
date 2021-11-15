@@ -178,8 +178,3 @@ select {
 .btnEfface:hover {
     color: red;
 }
-
-.effaces {
-    transform: translateY(8rem) rotateZ(20deg);
-    opacity: 0;
-}
